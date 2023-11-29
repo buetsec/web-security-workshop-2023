@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Quick Start</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Quick start guide">
+
+  <meta name="author" content="cristianmarint">
+  <meta name="generator" content="Hugo 0.118.2">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://23.251.153.217:8000/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="http://23.251.153.217:8000/plugins/themify-icons/themify-icons.css">
+  
+  <link rel="stylesheet" href="http://23.251.153.217:8000/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="http://23.251.153.217:8000/plugins/custom/clean-footer.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link href="http://23.251.153.217:8000/scss/style.min.css" rel="stylesheet" media="screen"/>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://23.251.153.217:8000/images/logo.png" type="image/x-icon">
+  <link rel="icon" href="http://23.251.153.217:8000/images/logo.png" type="image/x-icon">
+
+  
+  
+  <meta property="og:title" content="Quick Start" />
+<meta property="og:description" content="Quick start guide" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://23.251.153.217:8000/quick-start/" />
+
+  
+  
+  
+</head><body><!-- navigation -->
+
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-button mt-5">
+  <div class="container">
+    <a class="navbar-brand text-uppercase pl-3 pr-3" href="http://23.251.153.217:8000/" style="font-weight: bold;color: #ffffff;background: #000000;">
+      Sicily
+    </a>
+      <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div
+          class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav mr-auto mx-auto">
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="http://23.251.153.217:8000/blog" style="font-weight: bold;font-size: 16px;font-style: normal;">Blog</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="http://23.251.153.217:8000/pricing" style="font-weight: bold;font-size: 16px;font-style: normal;">Pricing</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="http://23.251.153.217:8000/contact" style="font-weight: bold;font-size: 16px;font-style: normal;">Contact</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="http://23.251.153.217:8000/faq" style="font-weight: bold;font-size: 16px;font-style: normal;">FAQ</a>
+                </li>
+              
+          </ul>
+
+          
+          
+            <span class="actions">
+              <a href="http://23.251.153.217:8000/contact"  style="font-weight: bold;" class="btn btn-primary">Get it touch</a>
+            </span>
+          
+          
+      </div>
+  </div>
+</nav>
+
+<!-- /navigation -->
+
+<section class="section pb-0">
+  <div class="container text-center">
+    <h1 class="display-1" style="font-weight: bold;">Quick Start</h1>
+    
+    <p style="color: gray;">Let&rsquo;s go!</p>
+    
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="content"><h1 id="introduction">Introduction</h1>
+<h2 id="about-this-guide">About this guide</h2>
+<p><em>Robot Framework Quick Start Guide</em> introduces the most important `Robot</p>
+<p>Framework <a href="http://robotframework.org">http://robotframework.org</a>`_ features. You can simply browse</p>
+<p>through it and look at the examples, but you can also use the guide as an</p>
+<p><code>executable demo</code>__. All features shown here are explained more thoroughly</p>
+<p>in <code>Robot Framework User Guide</code>_.</p>
+<p>__ <code>Executing this guide</code>_</p>
+<p>.. _Robot Framework User Guide: <a href="http://robotframework.org/robotframework/#user-guide">http://robotframework.org/robotframework/#user-guide</a></p>
+<h2 id="robot-framework-overview">Robot Framework overview</h2>
+<p><code>Robot Framework</code>_ is a generic open source test automation framework for</p>
+<p>acceptance testing and acceptance test-driven development (ATDD). It has</p>
+<p>easy-to-use tabular test data syntax and it utilizes the keyword-driven</p>
+<p>testing approach. Its testing capabilities can be extended by test libraries</p>
+<p>implemented either with Python or Java, and users can create new higher-level</p>
+<p>keywords from existing ones using the same syntax that is used for creating</p>
+<p>test cases.</p>
+<p>Robot Framework is operating system and application independent. The core</p>
+<p>framework is implemented using <code>Python &lt;http://python.org&gt;</code>_ and runs also on</p>
+<p><code>Jython &lt;http://jython.org&gt;</code>_ (JVM) and <code>IronPython &lt;http://ironpython.net&gt;</code>_</p>
+<p>(.NET). The framework has a rich ecosystem around it consisting of various</p>
+<p>generic test libraries and tools that are developed as separate projects.</p>
+<p>For more information about Robot Framework and the ecosystem, see</p>
+<p><a href="http://robotframework.org">http://robotframework.org</a>. There you can find plenty more documentation,</p>
+<p>demo projects, list of available test libraries and other tools, and so on.</p>
+<h2 id="demo-application">Demo application</h2>
+<p>The sample application for this guide is a variation on a classic login</p>
+<p>example: it is a command-line based authentication server written in Python.</p>
+<p>The application allows a user to do three things:</p>
+<ul>
+<li>
+<p>Create an account with a valid password.</p>
+</li>
+<li>
+<p>Log in with a valid user name and password.</p>
+</li>
+<li>
+<p>Change the password of an existing account.</p>
+</li>
+</ul>
+<p>The application itself is in <code>&lt;sut/login.py&gt;</code>_ file and can be executed with</p>
+<p>a command <code>python sut/login.py</code>. Attempting to log in with a non-existent</p>
+<p>user account or with an invalid password results in the same error message::</p>
+<blockquote>
+<p>python sut/login.py login nobody P4ssw0rd</p>
+</blockquote>
+<p>Access Denied</p>
+<p>After creating a user account with valid password login succeeds::</p>
+<blockquote>
+<p>python sut/login.py create fred P4ssw0rd</p>
+</blockquote>
+<p>SUCCESS</p>
+<blockquote>
+<p>python sut/login.py login fred P4ssw0rd</p>
+</blockquote>
+<p>Logged In</p>
+<p>There are two requirements that a password must fulfill to be valid: it must</p>
+<p>be between 7-12 characters long, and it must contain lower and upper case</p>
+<p>letters and numbers, but it must not contain special characters. Trying to</p>
+<p>create a user with invalid password fails::</p>
+<blockquote>
+<p>python sut/login.py create fred short</p>
+</blockquote>
+<p>Creating user failed: Password must be 7-12 characters long</p>
+<blockquote>
+<p>python sut/login.py create fred invalid</p>
+</blockquote>
+<p>Creating user failed: Password must be a combination of lowercase and</p>
+<p>uppercase letters and numbers</p>
+<p>Changing password with invalid credentials results in the same error message</p>
+<p>as logging in with invalid credentials. The validity of new password is</p>
+<p>verified and if not valid, an error message is given::</p>
+<blockquote>
+<p>python sut/login.py change-password fred wrong NewP4ss</p>
+</blockquote>
+<p>Changing password failed: Access Denied</p>
+<blockquote>
+<p>python sut/login.py change-password fred P4ssw0rd short</p>
+</blockquote>
+<p>Changing password failed: Password must be 7-12 characters long</p>
+<blockquote>
+<p>python sut/login.py change-password fred P4ssw0rd NewP4ss</p>
+</blockquote>
+<p>SUCCESS</p>
+<p>The application uses a simple database file to keep track on user statuses.</p>
+<p>The file is located in operating system dependent temporary directory.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-4 d-none d-sm-block"></div>
+        <div class="col col-md-8">
+            <h1 class="display-1 text-uppercase" style="color: rgb(255,255,255);text-align: right;background: #000000;font-weight: bold;">
+              Sicily
+            </h1>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-clean">
+  <footer>
+      <div class="container">
+          <h1 style="color: #000000;">Join us</h1>
+          <div class="row justify-content-center mr-5 ml-5 p-5">
+              <div class="col col-md-4 mt-5">
+                  <h3 class="text-uppercase" style="color: rgb(0,0,0);">Colombia</h3>
+                  <ul>
+                      <li>7657 Cl. 6, Centro</li>
+                      <li>Cartago, Valle Del Cauca</li>
+                      <li>&#43;57 315 270 2727</li>
+                      <li class="mt-3 mb-4" style="color: rgb(0,0,0);">
+                        <a class="pt-5" href="mailto:contact@sicily.com" style="font-weight: bold;color: rgb(0,0,0);" target="_blank">contact@sicily.com</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col col-md-4 mt-5">
+                  <h3 class="text-uppercase">Company</h3>
+                  <ul>
+                    
+                      <li><a href="http://23.251.153.217:8000/about-us">About Us</a></li>
+                    
+                      <li><a href="http://23.251.153.217:8000/quick-start">Quick Start</a></li>
+                    
+                      <li><a href="http://23.251.153.217:8000/terms-conditions">Terms &amp; Conditions</a></li>
+                    
+                  </ul>
+              </div>
+              <div class="col col-md-4 mt-5">
+                  <h3 class="text-uppercase">Product</h3>
+                  <ul>
+                    
+                      <li><a href="http://23.251.153.217:8000/faq">FAQ</a></li>
+                    
+                      <li><a href="http://23.251.153.217:8000/platform">Platform</a></li>
+                    
+                      <li><a href="http://23.251.153.217:8000/pricing">Pricing</a></li>
+                    
+                      <li><a href="http://23.251.153.217:8000/privacy-policy">Privacy Policy</a></li>
+                    
+                  </ul>
+              </div>
+          </div>
+
+          <div class="row justify-content-center mr-5 ml-5 p-5">
+              
+                  <div class="col col-md-4 mt-5">
+                      <h3 class="text-uppercase">Creative Director</h3>
+                      <ul>
+                          <li>Pedro Pidras</li>
+                          <li><a href="mailto:pedropiedras@sicily.com" style="font-weight: bold;color: rgb(0,0,0);">pedropiedras@sicily.com</a></li>
+                      </ul>
+                  </div>
+              
+                  <div class="col col-md-4 mt-5">
+                      <h3 class="text-uppercase">Chief executive officer</h3>
+                      <ul>
+                          <li>Juan Risas</li>
+                          <li><a href="mailto:juanrisas@sicily.com" style="font-weight: bold;color: rgb(0,0,0);">juanrisas@sicily.com</a></li>
+                      </ul>
+                  </div>
+              
+                  <div class="col col-md-4 mt-5">
+                      <h3 class="text-uppercase">Bussines Director</h3>
+                      <ul>
+                          <li>Mateo Josedulfo</li>
+                          <li><a href="mailto:mateojosedulfo@Sicily.com" style="font-weight: bold;color: rgb(0,0,0);">mateojosedulfo@Sicily.com</a></li>
+                      </ul>
+                  </div>
+              
+          </div>
+      </div>
+  </footer>
+</div>
+
+<!-- JS Plugins -->
+
+<script src="http://23.251.153.217:8000/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://23.251.153.217:8000/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://23.251.153.217:8000/plugins/slick/slick.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://23.251.153.217:8000/js/script.min.js"></script></body>
+
+</html>
