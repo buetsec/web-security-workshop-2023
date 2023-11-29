@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "password": "admin",
+        "message": "I've saved the flag here. Flag: BUET{i_am_the_flag}"
+    }
+]
