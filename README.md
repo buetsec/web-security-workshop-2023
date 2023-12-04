@@ -1,5 +1,5 @@
 ### Details
-This repository contains the materials shown during the Web Security Workshop 2023 arranged by BUET Cyber Security Club. The session was taken online and the recording can be found here.
+This repository contains the materials shown during the Web Security Workshop 2023 arranged by BUET Cyber Security Club. The session was taken online and the recording can be found [here](https://drive.google.com/file/d/1k5A59NTLOy_KCAvhyhKkPbTIf7Jhp5NH/view).
 
 ### Contents
 - Some theoretical aspects
